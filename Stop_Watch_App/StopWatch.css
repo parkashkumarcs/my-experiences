@@ -1,0 +1,100 @@
+.main-container{
+    align-content: center;
+    padding-left: 500px;
+    padding-top: 10px;
+}
+#card{
+    width: 300px;
+    height: 450px;
+    background-color: rgb(216, 216, 216);
+    /* padding-top: 150px; */
+    text-align: center;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(29, 29, 29, 0.527);
+}
+#card:hover{
+    box-shadow: 0px 0px 5px 5px rgba(26, 156, 196, 0.856);
+    background-color: rgb(27, 1, 29);
+    transition: 0.4s;
+}
+#setTime{
+    font-size: 30px;
+    width: 280px;
+    margin-top: 20px;
+    padding-top: 15px;
+    height: 50px;
+    background-color: rgb(155, 155, 155);
+    display: inline-block;
+    border-radius: 10px;
+    /* color: rgb(252, 249, 205); */
+}
+#stop{
+    font-size: 30px;
+    position: absolute;
+    left: 515px;
+    top: 465px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.15s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+    
+}
+.reset{
+    position: absolute;
+    font-size: 30px;
+    position: absolute;
+    left: 610px;
+    top: 465px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.15s;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.733);
+}
+
+#start{
+    position: absolute;
+    font-size: 30px;
+    position: absolute;
+    left: 722px;
+    top: 465px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.15s;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.733);
+}
+#start:hover{
+    scale: 1.1;
+    background-color: rgb(34, 165, 8);
+    color: white;
+}
+.reset:hover{
+    scale: 1.1;
+    background-color: rgb(155, 155, 155);
+    color: white;
+}
+#stop:hover{
+    scale: 1.1;
+    background-color: rgb(236, 14, 14);
+    color: white;
+}
+.icon{
+    /* border: 3px solid yellow; */
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    border-radius: 50%;
+    animation: myIcon 1s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes myIcon {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}

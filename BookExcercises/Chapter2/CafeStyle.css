@@ -1,0 +1,19 @@
+h1{
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-size: 20px;
+}
+h2{
+    background-color: azure;
+    color: rgb(252, 94, 107);
+}
+marquee{
+    direction: right; 
+    background-color: rgb(241, 177, 177); 
+    color: white;
+}
+footer{
+    background-color: burlywood;
+}

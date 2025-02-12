@@ -1,0 +1,77 @@
+header{
+    height: 200px;
+    font-size: 50px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 10px;
+    background-color: blueviolet;
+    box-shadow: 0px 5px 5px 5px rgba(124, 116, 131, 0.699);
+    margin-bottom: 5px;
+}
+h2{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    align-content: center;
+    background-color: rgb(255, 251, 0);
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(5, 124, 13, 0.815);
+}
+h2:hover{
+    height: 30px;
+    background-color: rgb(226, 43, 104);
+    color: white;
+    border-bottom: 5px solid rgb(61, 23, 230);
+}
+.main-container{
+    display: inline-flex;
+    gap: 10px;
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section{
+    width: 780px;
+    height: 280px;
+    background-color: rgb(75, 143, 7);
+    /* float:inline-start; */
+    padding: 10px;
+
+    
+}
+article{
+    width: 780px;
+    height: 280px;
+    background-color: rgb(143, 7, 75);
+    /* float:inline-start; */
+    padding: 10px;
+}
+aside{
+    width: 510px;
+    height: 590px;
+    background-color: rgb(143, 7, 132);
+    /* float:inline-start; */
+    padding: 10px;
+}
+footer{
+    height: 350px;
+    background-color: rgb(228, 183, 5);
+    padding: 10px;
+}
+ul{
+    height: 290px;
+}
+h3{
+    justify-content: center;
+    text-align: center;
+}

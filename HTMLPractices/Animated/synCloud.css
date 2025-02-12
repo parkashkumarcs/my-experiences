@@ -1,0 +1,196 @@
+.main-container{
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid red; */
+    background: url('sky.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.image{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 70px;
+    left: -280px;
+    animation: sun 25s infinite;
+    animation-timing-function: linear;
+    
+}
+.image1{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 70px;
+    left: 390px;
+    animation: cloud1 15s infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    opacity: 0.8;
+    
+}
+
+.image2{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    animation: cloud2 10s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    opacity: 0.8;
+    
+}
+.image3{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -100px;
+    left: 390px;
+    animation: cloud3 35s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    opacity: 0.8;
+    
+}
+.image4{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -100px;
+    left: 390px;
+    animation: cloud4 8s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    opacity: 0.8;
+    
+}
+#papa{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 50%;
+}
+#papa1{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: -30px;
+    border-radius: 50%;
+    animation: roll 5s infinite;
+    animation-timing-function: linear;
+
+}
+#papa2{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: -180px;
+    top:-150px;
+    border-radius: 50%;
+    animation: roll 5s infinite;
+    animation-timing-function: linear;
+
+}
+#papa3{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: -120px;
+    top:100px;
+    opacity: 0.9;
+
+
+}
+@keyframes roll {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.image5{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 50%;
+    /* border: 3px solid red; */
+    top: -100px;
+    left: 390px;
+    animation: cloud4 30s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    opacity: 0.8;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes sun {
+    from{
+        top: 70px;
+        left: -280px;
+    }
+    to{
+        top: 70 px;
+        left: 100%;
+    }
+}
+
+@keyframes cloud1 {
+    from{
+        top: 70px;
+        left: -280px;
+    }
+    to{
+        top: 70 px;
+        left: 100%;
+    }
+}
+
+@keyframes cloud2 {
+    from{
+        top: 600px;
+        left: -280px;
+    }
+    to{
+        top: -770 px;
+        left: 100%;
+    }
+}
+@keyframes cloud3 {
+    from{
+        top: 70px;
+        left: -280px;
+    }
+    to{
+        top: 70 px;
+        left: 100%;
+    }
+}
+@keyframes cloud4 {
+    from{
+        top: 70px;
+        left: -280px;
+    }
+    to{
+        top: 70 px;
+        left: 100%;
+    }
+}
+
+@keyframes cloud5 {
+    from{
+        top: 0px;
+        left: -280px;
+    }
+    to{
+        top: 70 px;
+        left: 100%;
+    }
+}

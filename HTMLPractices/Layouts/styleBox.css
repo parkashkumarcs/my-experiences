@@ -1,0 +1,49 @@
+.header-container{
+    background-color: aqua;
+    height: 100px;
+    text-align: center;
+    border: 4px solid rgb(247, 58, 58);
+}
+.section-container{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    gap: 5px;
+   align-items: center;
+   border: 4px solid rgb(146, 219, 49);
+}
+.box-container{
+    display: flex;
+    flex-direction: column;
+    width: 1075px;
+    align-items: center;
+    gap: 5px;
+    border: 4px solid rgb(34, 177, 233);
+}
+.right-side-container{
+    background-color: blue;
+    height: 530px;
+
+    border: 4px solid rgb(238, 48, 48);
+}
+.left-side-container{
+    background-color: rgb(53, 214, 47);
+    height: 530px;
+
+    border: 4px solid rgb(247, 58, 58);
+}    
+.box{
+    background-color: orange;
+   
+    border: 2px solid black;
+    width: 1070px;
+
+}
+
+.footer-container{
+    background-color: brown;
+    height: 200px;
+    border: 4px solid rgb(45, 241, 61);
+}

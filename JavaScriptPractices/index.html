@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!-- <style>
+        .main-container{
+            width: 1000px;
+            height: 600px;
+            margin-left: 120px;
+            background-color: rgb(255, 255, 255);
+        }
+        .row-container{
+         display: flex;
+         flex-direction: row;
+        }
+        .box{
+            width: 500px;
+            height: 300px;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="main-container">
+        <input type="number" id="operand1" name="operand1" step="any"/>
+        <select id="operator">
+            <option value="+">&plus;</option>
+            <option value="-">&minus;</option>
+            <option value="*">&Cross;</option>
+            <option value="/">&div;</option>
+        </select>
+        <input type="number" id="operand2" name="operand2" step="any"/><br><br>
+        <button onclick="cal()">calculate</button><br><br>
+        <div id="result" style="width: 175px; height: 20px; border: 1px solid;"></div>
+        <br><br>
+        <div class="output-container">
+            <div class="val">text</div>
+            <div class="val">text</div>
+            <div class="val">text</div>
+            <div class="val">text</div>
+            <div class="val">text</div>
+            <div class="val">text</div>
+            <div class="val">text</div>
+        </div>
+        <br><br>
+        <div    id="display" ></div> 
+        <button onclick="pop()">Pop</button>
+        <button onclick="push()">Push</button>
+        <button onclick="slice()">Slice</button>
+        <button onclick="reverse()">Reverse</button>
+        <button onclick="shift()">Shift</button>
+
+
+
+        <!-- <div class="row-container">
+            <div class="box" style="background-color: yellow;"></div>
+            <div class="box" style="background-color: rgb(5, 168, 54);"></div>
+        </div>
+        <div class="row-container">
+            <div class="box" style="background-color: rgb(255, 8, 0);"></div>
+            <div class="box" style="background-color: rgb(0, 17, 255);"></div>
+        </div> -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

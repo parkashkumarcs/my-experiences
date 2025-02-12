@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StopWatch.css">
+    <title>Stop Watch</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="main-container">
+        <div id="card">
+            <h3 style="color: rgb(255, 0, 140); font-size: 50px;"><span class="icon">⏱️</span><br>Stop Watch</h3>
+            <p id="setTime">00hr : 00min : 00sec </p>
+            <button id="stop" onclick="stop()">Stop</button>
+            <button class="reset" onclick="reset()">Reset</button>
+            <button id="start" onclick="start()">Start</button>
+        </div>
+    </div>    
+
+    <script src="StopWatch.js"></script>
+</body>
+</html>

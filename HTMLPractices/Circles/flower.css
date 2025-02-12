@@ -1,0 +1,165 @@
+.main-container{
+    height: 800px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.circle1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 560px;
+    top: 90px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+
+.circle1:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(176, 5, 255);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 560px;
+    top: 90px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+.circle2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 195px;
+    top: 372px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+.circle2:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 132, 32);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 195px;
+    top: 372px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+.circle3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 235, 0);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: -20px;
+    top: 175px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+.circle3:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(3, 255, 213);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: -20px;
+    top: 175px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+
+.circle4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(208, 255, 0);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 143px;
+    top: 170px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+
+.circle4:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 143px;
+    top: 170px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+.circle5{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 128);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: -40px;
+    top: 370px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+.circle5:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 106);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: -40px;
+    top: 370px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+.circle6{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 217, 255);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: -420px;
+    top: 450px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+.circle6:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 153, 0);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: -420px;
+    top: 450px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+}
+.circle7{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 468px;
+    top: -27px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+    
+}
+.circle7:hover{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 468px;
+    top: -27px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.801);
+    
+}

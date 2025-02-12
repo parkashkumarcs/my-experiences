@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Events Handling</title>
+</head>
+<body onload="showTime()">
+    <label id="user">Enter name: </label>
+    <input type="text" name="userName" id="user"/>
+    <button type="submit" onclick="studentName()">Submit</button>
+    <span><h1>Student Name: </h1></span>
+    <h1 class="output"></h1>
+    <h1 class="output">I will change by event in two seconds just run it</h1>
+    <button onclick="runMe()">Run...</button>
+    <h1 class="output"></h1>
+    <h1 class="output" onmouseenter="sizeChange()" id="heading" onmouseleave="reset()">Parkash Kumar</h1>
+    <script src="events.js"></script>
+</body>
+</html>

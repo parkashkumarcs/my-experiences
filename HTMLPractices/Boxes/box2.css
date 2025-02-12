@@ -1,0 +1,55 @@
+.main-container{
+    height: 600px;
+    background-color: rgb(95, 95, 95);
+    gap: 5px;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    box-shadow: 5px 5px 4px rgba(62, 27, 131, 0.788);
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(166, 255, 0);
+    transform: translate(1142px, 200px);
+    box-shadow: -5px -5px 4px rgba(27, 131, 91, 0.788);
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 157);
+    box-shadow: 5px -5px 4px rgba(221, 33, 33, 0.788);
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 0);
+    transform: translate(1040px, -500px) scale(2);
+    box-shadow: -5px 5px 4px rgba(192, 30, 165, 0.788);
+}
+.big-box{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 255, 170);
+    transform: translate(470px, -700px) rotate(45deg) skewX(-14deg); 
+    /*
+    skew(deg|rad|turn) | skewX(deg|rad|turn) | skewY(deg|rad|turn)
+    generally: skew(x-axis, y-axis)
+    //_________________________________________________//
+    rotate(deg|rad) | rotateX() | rotateY()
+    generally: rotate(x-axis, y-axis)
+
+    //_________________________________________________//
+    increase the size of content based on provided value multiply by given content value or size
+    scale(1) X: 400px Y: 400px it is same size as it own content.
+    scale(2) double size of original content ass X: 800px Y: 800px
+    as shown in box4.
+    We can use as
+    scaleX() | scaleY() accordingly.
+    */
+    
+    box-shadow: 0px 0px 4px 10px rgba(229, 255, 0, 0.753);
+    /* transform: skewX(0deg); */ /*Not more than one tranform allowed except sorted  property*/
+}

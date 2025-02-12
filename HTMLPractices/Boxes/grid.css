@@ -1,0 +1,77 @@
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    /* background-color: rgb(104, 104, 104); */
+
+}
+.grid-container{
+    width: 31%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(12, 12, 11);
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 0px rgba(230, 229, 229, 0.459);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 96px 96px 96px 96px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.input{
+    width: 435px;
+    height: 90px;
+    outline: none;
+    cursor: text;
+    position: relative;
+    padding: 5px;
+    left: 450px;
+    bottom: 10px;
+    border: 1px solid gray;
+    background-color: rgb(169, 253, 166);
+    font-size: 35px;
+    color: rgb(97, 99, 100);
+    
+    
+}
+.input:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.input::after {
+    content: "|"; /* Fake blinking cursor */
+    display: inline-block;
+    animation: blink 1s infinite;
+    color: black;
+    margin-left: 5px;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+.grid-container button {
+    /* width: 50px; */
+    font-size: 35px;
+    padding: 25px;
+    color: aliceblue;
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.grid-container button:hover{
+    /* scale: 1.1; */
+    border-radius: 50%;
+    background-color: rgb(65, 65, 65);
+    text-align: center;
+    /* border-radius: 5px; */
+    font-weight: bold;
+    color: rgb(24, 245, 226);
+    cursor: pointer;
+
+}
