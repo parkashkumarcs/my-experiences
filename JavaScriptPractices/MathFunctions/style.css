@@ -1,0 +1,18 @@
+
+
+div{
+    width: fit-content;
+    background-color: rgb(197, 154, 90);
+    font-size: 50px;
+    color: rgb(0, 0, 124);
+}
+.horizontalLine{
+    height: 50px;
+    background-color: brown;
+}
+button{
+    font-size: 50px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 10px;
+}

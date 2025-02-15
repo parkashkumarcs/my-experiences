@@ -1,0 +1,98 @@
+.main-container{
+
+}
+.card{
+    margin: auto;
+    margin-top: 60px;
+    width: 350px;
+    height: 500px;
+    background-color: rgb(26, 26, 26);
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 5px 5px 5px grey;
+    text-align: center;
+    align-content: center;
+
+}
+.heading{
+    /* position: absolute; */
+    /* left: 150px; */
+    /* top: 10px; */
+    font-size: 100px;
+    color: rgb(134, 134, 134);
+}
+.incBtn{
+    position: absolute;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: red;
+    color: aliceblue;
+    top: 467px;
+    left: 05px;
+}
+.resBtn{
+    position: absolute;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(112, 112, 112);
+    color: aliceblue;
+    top: 467px;
+    left: 129px;
+}
+.decBtn{
+    position: absolute;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: green;
+    color: aliceblue;
+    top: 467px;
+    left: 249px;
+}
+
+/* Validation CSS:*/
+
+.form-container{
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+    height: 450px;
+    border: 2px solid rebeccapurple;
+    border-radius: 15px;
+    gap: 10px;
+    box-shadow: 5px 5px 5px rgba(109, 94, 124, 0.671);
+    background-color: rgb(226, 226, 226);
+}
+.submitbtn{
+    width: fit-content;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.form-container input{
+    border-radius: 5px;
+    font-size: 20px;
+}
+.form-container h1{
+    border-radius: 5px;
+    font-size: 25px;
+    margin: auto;
+    color: rgb(97, 7, 241);
+}
+
+.form-container button:hover{
+    background-color: rgb(97, 7, 241);
+    color: white;
+    scale: 1.1;
+}
+#submitMessage{
+    margin: auto;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validated Form</title>
+</head>
+<body>
+    <div class="main-container">
+        <form class="form-container">
+            <h1>Contact Me</h1>
+            <label>First Name:</label>
+            <input type="text" required/>
+            <label>Last Name:</label>
+            <input type="text" required/>
+            <label>Email:</label>
+            <input type="email" required/>
+            <label id="input">Phone Number:</label>
+            <input type="text" name="go" onkeyup="valid(this)" required id="ok"/>
+            <div id="values"></div>
+            <button type="submit" onclick="submitValid()" id="go" class="submitbtn">submit</button>
+            <div id="submitMessage"></div>
+        </form>
+    </div>
+    <script src="anotherValid.js"></script> <!-- This Best and professional Way to validate the input-->
+    <!-- <script src="validation.js"></script> --> <!-- This is lengthy Way to validate the input-->
+</body>
+</html>
