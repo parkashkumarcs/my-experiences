@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Production Table</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="inputTable">
+            <label id="inp">Enter table number?</label>
+            <input type="text" onkeyup="validation(this)" required/>
+            <button onclick="process()"> Start</button>
+            <div id="check"></div>
+            <br><br>
+            <label id="inp">Or<br><br>Enter custom table number?</label><br><br>
+            <label id="inp">Start:</label><input type="text" class="custom" onkeyup="startNum(this)"/>
+            <label id="inp">Table Number:</label><input type="text" class="custom" onkeyup="tableNum(this)"/>
+            <label id="inp">End:</label><input type="text" class="custom" onkeyup="endNum(this)"/><br><br>
+            <button onclick="customProcess()">Start</button>
+            <button onclick="printTable()">Print</button>
+            <button onclick="clearContents()">Clear</button>
+        </div>
+        <h1 id = "tableNumber">Table Number ?</h1>
+        <div class="displayContainer" id = 'dis'>
+            <!-- <div>Table Number</div> -->
+            <!--<div>Not Optimized</div>
+            <div></div>
+            <div></div>
+            <div></div> 
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

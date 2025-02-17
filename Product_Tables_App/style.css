@@ -1,0 +1,88 @@
+.main-container{
+    
+}
+.inputTable{
+    width: 800px;
+    height: 350px;
+    padding-top: 300px;
+    border: 2px solid rgb(46, 0, 0);
+    box-shadow: 5px 5px 5px rebeccapurple;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    border-radius:10px ;
+    padding-top: 30px;
+    background-color: burlywood;
+}
+.inputTable input{
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    border-radius: 5px;
+    padding: 5px;
+}
+.inputTable div{
+    font-size: 20px;
+    position: absolute;
+    left: 630px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.inputTable button{
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.inputTable button:hover{
+    color: white;
+    background-color: rgb(32, 185, 1);
+}
+/* hr{
+    height: 5px;
+    background-color: blueviolet;
+    box-shadow: 0px 5px 5px purple;
+} */
+.custom{
+    width: 100px;
+    margin: 10px;
+}
+.displayContainer{
+    border: 2px solid red;
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px rgb(72, 72, 72);
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    min-width: 783px;
+    min-height: 200px;
+    font-weight: bold;
+    position: relative;
+    left: 263px;
+    /*
+    left: /550px;
+    bottom: 470px; */
+    margin: auto;
+    background-color: black;
+    color: aquamarine;
+}
+.displayContainer div{
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+#tableNumber{
+    margin: 10px;
+    width: 240px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(105, 7, 89);
+    position: relative;
+    left: 530px;
+}
