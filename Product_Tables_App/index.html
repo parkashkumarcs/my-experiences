@@ -10,14 +10,21 @@
     <div class="main-container">
         <div class="inputTable">
             <label id="inp">Enter table number?</label>
-            <input type="text" onkeyup="validation(this)" required/>
+            <input type="text" onkeyup="validation(this)" onclick="allCls()"/>
             <button onclick="process()"> Start</button>
-            <div id="check"></div>
+            <div class="check"></div>
             <br><br>
             <label id="inp">Or<br><br>Enter custom table number?</label><br><br>
-            <label id="inp">Start:</label><input type="text" class="custom" onkeyup="startNum(this)"/>
-            <label id="inp">Table Number:</label><input type="text" class="custom" onkeyup="tableNum(this)"/>
-            <label id="inp">End:</label><input type="text" class="custom" onkeyup="endNum(this)"/><br><br>
+            <label id="inp">Start:</label>
+            <input type="text" class="custom" onkeyup="startNum(this)" onclick="cls()"/>
+            <div class="check"></div>
+            <label id="inp">Table Number:</label>
+            <input type="text" class="custom" onkeyup="tableNum(this)" onclick="cls()"/>
+            <div class="check"></div>
+            <label id="inp">End:</label>
+            <input type="text" class="custom" onkeyup="endNum(this)" onclick="cls()"/>
+            <div class="check"></div>
+            <br><br>
             <button onclick="customProcess()">Start</button>
             <button onclick="printTable()">Print</button>
             <button onclick="clearContents()">Clear</button>

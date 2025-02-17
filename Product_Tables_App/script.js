@@ -2,62 +2,67 @@ var numb;
 var startN;
 var tableN;
 var endN;
-
+var cls;
+var cls1;
+var cls2;
+var cls3;
 function validation(num){
-    // numb = 0;
-    // startN = 0;
-    // tableN = 0;
-    // endN = 0;
     numb = num.value;
     if(isNaN(numb) || numb[0]=='-' || numb[0]=='+'){
         numb=0;
-        document.getElementById('check').style.color = 'red';
-        document.getElementById('check').innerHTML = "Invalid Input!";
+        document.getElementsByClassName('check')[0].style.color = 'red';
+        document.getElementsByClassName('check')[0].innerHTML = "Invalid Input!";
     }else{
-        document.getElementById('check').innerHTML = "";
+        document.getElementsByClassName('check')[0].innerHTML = "";
+        cls = function (){
+            num.value = '';
+        }
+        cls1();
+        cls2();
+        cls3();
     }
-
+    
 }
 function startNum(st){
-    // numb = 0;
-    // startN = 0;
-    // tableN = 0;
-    // endN = 0;
     startN = st.value;
     if(isNaN(startN) || startN[0]=='-' || startN[0]=='+'){
         startN=0;
-        document.getElementById('check').style.color = 'red';
-        document.getElementById('check').innerHTML = "Invalid Input!";
+        document.getElementsByClassName('check')[1].style.color = 'red';
+        document.getElementsByClassName('check')[1].innerHTML = "Invalid Input!";
     }else{
-        document.getElementById('check').innerHTML = "";
+        document.getElementsByClassName('check')[1].innerHTML = "";
+        cls1 = function (){
+            st.value = '';
+        }
+        cls();
     }
 }
 function tableNum(tb){
-    // numb = 0;
-    // startN = 0;
-    // tableN = 0;
-    // endN = 0;
     tableN = tb.value;
     if(isNaN(tableN) || tableN[0]=='-' || tableN[0]=='+'){
         tableN=0;
-        document.getElementById('check').style.color = 'red';
-        document.getElementById('check').innerHTML = "Invalid Input!";
+        document.getElementsByClassName('check')[2].style.color = 'red';
+        document.getElementsByClassName('check')[2].innerHTML = "Invalid Input!";
     }else{
-        document.getElementById('check').innerHTML = "";
+        document.getElementsByClassName('check')[2].innerHTML = "";
+        cls2 = function (){
+            tb.value = '';
+        }
+        cls();
     }
 }
 function endNum(en){
-    // numb = 0;
-    // startN = 0;
-    // tableN = 0;
-    // endN = 0;
     endN = en.value;
     if(isNaN(endN) || endN[0]=='-' || endN[0]=='+'){
         endN=0;
-        document.getElementById('check').style.color = 'red';
-        document.getElementById('check').innerHTML = "Invalid Input!";
+        document.getElementsByClassName('check')[3].style.color = 'red';
+        document.getElementsByClassName('check')[3].innerHTML = "Invalid Input!";
     }else{
-        document.getElementById('check').innerHTML = "";
+        document.getElementsByClassName('check')[3].innerHTML = "";
+        cls3 = function (){
+            en.value = '';
+        }
+        cls();
     }
 }
 var arr;
@@ -77,44 +82,35 @@ function process(){
 function customProcess(){
     arr = '';
     let diff = (parseInt(endN)-parseInt(startN));
-    // let count = diff-10;
-    // let additional=0;
-    // alert(diff)
     document.getElementById('tableNumber').innerHTML = "Table Number " + tableN;
-    // if(startN > 0 && tableN > 0 && endN > 0){
     let parentDiv = document.getElementById('dis');
     for(var j = 0; j<=diff;j++){
         let newDiv = document.createElement("div");
         arr = parseInt(j+parseInt(startN)) + " x " + tableN + " = " + ((parseInt(j+parseInt(startN)))*parseInt(tableN));
         newDiv.innerText = arr;
         parentDiv.appendChild(newDiv);
-        // childDivs[0].innerHTML = "Table Number "+tableN;
-        // arr=parseInt(j+parseInt(startN)) + " x " + tableN + " = " + ((parseInt(j+parseInt(startN)))*parseInt(tableN));
-        // childDivs[j+1].innerText = arr;
     }
-    // }
-    // else{
-    //     let parentDiv = document.getElementById('dis');
-    //     let childDivs = parentDiv.children;
-    //     childDivs[0].innerHTML = "Table Number "+tableN;
-    //     if(startN > 0 && tableN > 0 && endN > 0){
-    //         for(var j = 0; j<=diff;j++){
-    //             arr=parseInt(j+parseInt(startN)) + " x " + tableN + " = " + ((parseInt(j+parseInt(startN)))*parseInt(tableN));
-    //             childDivs[j+1].innerText = arr;
-    //         }
-    //     }
-    // }
-    // alert(tableN)
-    
     
 }
 
 function clearContents(){
     let parentDiv = document.getElementById("dis");
     let childDivs = parentDiv.querySelectorAll("div");
-
     childDivs.forEach(div => {
         div.innerText = ""; 
     });
-
+    numb = '';
+    startN = '';
+    tableN = '';
+    endN = '';
+    cls();
+    cls1();
+    cls2();
+    cls3();
+    document.getElementById('tableNumber').innerHTML = "Table Number?";
+}
+function allCls(){
+    cls1();
+    cls2();
+    cls3();
 }
