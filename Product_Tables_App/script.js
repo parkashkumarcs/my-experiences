@@ -6,6 +6,7 @@ var cls;
 var cls1;
 var cls2;
 var cls3;
+var tableData = '';
 function validation(num){
     numb = num.value;
     if(isNaN(numb) || numb[0]=='-' || numb[0]=='+'){
@@ -77,6 +78,7 @@ function process(){
             newDiv.innerText = arr;
             parentDiv.appendChild(newDiv);
         }
+        tableData =parentDiv.innerText;
     }
 }
 function customProcess(){
@@ -90,13 +92,13 @@ function customProcess(){
         newDiv.innerText = arr;
         parentDiv.appendChild(newDiv);
     }
-    
+    tableData = parentDiv.innerText;
 }
 
 function clearContents(){
     let parentDiv = document.getElementById("dis");
     let childDivs = parentDiv.querySelectorAll("div");
-    childDivs.forEach(div => {
+    tableData = childDivs.forEach(div => {
         div.innerText = ""; 
     });
     numb = '';
@@ -108,9 +110,17 @@ function clearContents(){
     cls2();
     cls3();
     document.getElementById('tableNumber').innerHTML = "Table Number?";
+    location.origin()
 }
 function allCls(){
     cls1();
     cls2();
     cls3();
+}
+var body = document.getElementById('body').innerHTML;
+function printTable(){
+    document.getElementById('body').innerText = tableData;
+    window.print();
+    document.getElementById('body').innerHTML = body;
+
 }

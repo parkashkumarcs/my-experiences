@@ -1,12 +1,12 @@
 .main-container{
-    
+    background-color: rgb(255, 255, 255);
 }
 .inputTable{
     width: 800px;
     height: 350px;
     padding-top: 300px;
-    border: 2px solid rgb(46, 0, 0);
-    box-shadow: 5px 5px 5px rebeccapurple;
+    /* border: 2px solid rgb(46, 0, 0); */
+    box-shadow: 5px 5px 5px rgba(140, 111, 15, 0.741);
     margin: auto;
     font-size: 30px;
     text-align: center;

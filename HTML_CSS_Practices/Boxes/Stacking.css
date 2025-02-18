@@ -1,0 +1,26 @@
+.box{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+    width: 125px;
+    height: 125px;
+    text-align: center;
+}
+.green{
+    background-color: green;
+}
+/* .blue .red{
+    position: absolute;
+} */
+.red{
+    background-color: red;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.blue{
+    background-color: blue;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
