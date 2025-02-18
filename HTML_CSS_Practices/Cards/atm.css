@@ -1,0 +1,110 @@
+.card-container{
+    padding: 20px;
+    /* border: 3px solid green; */
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    margin-top: 120px;
+}
+.card{
+    width: 350px;
+    height: 200px;
+    /* border: 2px solid orange; */
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    padding: 10px;
+    position: relative;
+}
+.qr-code{
+    width: 50px;
+    height: 50px;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+.black-bar{
+    width: 350px;
+    height: 30px;
+    background-color: black;
+}
+.atm1{
+    background-color: brown;
+    color: #eee;
+    transition: 0.4s;
+}
+.atm2{
+    background-color: rgb(193, 210, 9);
+    color: #eee;
+    position: absolute;
+    left: 520px;
+    top: 165px;
+    transition: 0.4s;
+}
+.atm3{
+    background-color: rgb(9, 128, 17);
+    color: #eee;
+    position: absolute;
+    left: 545px;
+    top: 190px;
+    transition: 0.4s;
+}
+.atm4{
+    background-color: rgb(89, 42, 165);
+    color: #eee;
+    position: absolute;
+    left: 570px;
+    top: 215px;
+    transition: 0.4s;
+}
+.atm4:hover{
+    background-color: rgb(89, 42, 165);
+    color: #eee;
+    position: absolute;
+    left: 575px;
+    top: 235px;
+    z-index: 0;
+    scale: 1.05;
+    transition: 0.4s;
+}
+.atm3:hover{
+    background-color: rgb(9, 128, 17);
+    color: #eee;
+    position: absolute;
+    left: 545px;
+    top: 205px;
+    z-index: 1;
+    scale: 1.05;
+}
+.atm2:hover{
+    background-color: rgb(193, 210, 9);
+    color: #eee;
+    position: absolute;
+    left: 515px;
+    top: 175px;
+    z-index: 2;
+    scale: 1.05;
+    transition: 0.4s;
+}
+.atm1:hover{
+    background-color: brown;
+    color: #eee;
+    position: absolute;
+    left: 490px;
+    top: 155px;
+    z-index: 3;
+    scale: 1.05;
+    transition: 0.4s;
+}
+.pin-number{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+}

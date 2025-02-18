@@ -1,3 +1,22 @@
+.container1{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    border: 2px solid rgb(225, 65, 65);
+}
+.container2{
+    margin-top: 100px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.container3{
+    margin-top: 100px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
 .box{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,4 +42,65 @@
     position: absolute;
     top: 80px;
     left: 80px;
+}
+
+/* Using z-index property */
+.chocolete{
+    background-color: rgb(39, 13, 7);
+    z-index: 100;
+}
+/* .blue .red{
+    position: absolute;
+} */
+.yellow{
+    background-color: rgb(238, 255, 0);
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+}
+.purple{
+    background-color: rgb(119, 13, 145);
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 2;
+}
+
+.gray{
+    background-color: gray;
+    z-index: 100;
+}
+/* .blue .red{
+    position: absolute;
+} */
+.pink{
+    background-color: pink;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 0;
+}
+.sky{
+    background-color: skyblue;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+}
+.orange{
+    width: 85px;
+    height: 85px;
+    background-color: orange;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+.lightgreen{
+    background-color: rgb(0, 255, 140);
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 6;
 }
