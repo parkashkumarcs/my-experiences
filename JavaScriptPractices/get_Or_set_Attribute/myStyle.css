@@ -1,0 +1,140 @@
+.container{
+    margin: auto;
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border: 5px solid red;
+    border-radius: 10px;
+    position: relative;
+   
+}
+.animation{
+    width: 100px;
+    height: 100px;
+    border: 3px dotted white;
+    border-radius: 50%;
+    margin: 10px;
+    animation: boxes 6s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+.noAnimation{
+    width: 100px;
+    height: 100px;
+    border: 3px dotted white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#green{
+    background-color: green;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#red{
+    background-color: red;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+#blue{
+    background-color: blue;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+#yellow{
+    background-color: yellow;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+#purple{
+    background-color: purple;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+#orange{
+    background-color: orange;
+    position: absolute;
+    left: 250px;
+    top: 250px;
+}
+#sky{
+    background-color: rgb(38, 178, 233);
+    position: absolute;
+    left: 300px;
+    top: 300px;
+}
+#pink{
+    background-color: rgb(221, 6, 139);
+    position: absolute;
+    left: 350px;
+    top: 350px;
+}
+.start{
+    font-size: 30px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 230px;
+    left: 150px;
+}
+.stop{
+    font-size: 30px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 280px;
+    left: 150px;
+}
+.start:hover{
+    background-color: green;
+    color: aliceblue;
+    cursor: pointer;
+}
+.stop:hover{
+    background-color: red;
+    color: aliceblue;
+    cursor: pointer;
+}
+@keyframes boxes{
+    0%{
+        background-color: green;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    20%{
+        background-color: rgb(170, 12, 209);
+        position: absolute;
+        left: 0px;
+        top: 420px;
+    }
+    40%{
+        background-color: rgb(194, 6, 6);
+        position: absolute;
+        left: 420px;
+        top: 420px;
+    }
+    60%{
+        background-color: rgb(10, 13, 197);
+        position: absolute;
+        left: 420px;
+        top: 0px;
+    }
+    80%{
+        background-color: rgb(168, 166, 9);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}

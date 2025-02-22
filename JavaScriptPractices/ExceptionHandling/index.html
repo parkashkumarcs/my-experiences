@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling</title>
+    <style>
+        button{
+            font-size: 30px;
+            background-color: coral;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: blue;
+            color: aliceblue;
+        }
+        input{
+            font-size: 30px;
+            border-radius: 10px;
+        }
+        label{
+            font-size: 30px;
+        }
+        #studentName{
+            display: inline;
+        }  
+        .name-container{
+            margin: auto;
+            margin-top: 50px;
+            width: 600px;
+            height: 250px;
+            border: 5px solid red;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        } 
+        #valid{
+            position: absolute;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="testMe()">Click Me</button>
+    <h1 id="printData"></h1>
+    <h1 id="printError"></h1>
+
+    <label for="student">Enter the student Name</label>
+    <input type="" name="student" id = "inp" value=""  onkeyup="getName(this)"/>
+    <h3 id = 'valid'></h3>
+    <button onclick="studentData()">Check</button>
+    <button onclick="callClear()">Clear</button>
+    <br>
+    <div class="name-container">
+        <h1 id = "studentName"></h1>
+    </div>
+    <script src="Exception.js"></script>
+</body>
+</html>
