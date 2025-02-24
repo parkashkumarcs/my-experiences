@@ -128,3 +128,17 @@ function required2(vl){
 function required3(vl){
     pass1 = vl.value;
 }
+/*
+    The following code logic for Caps lock button. When a user click the caps lock button
+    then in form page at right corner show the message to warn!
+*/
+var caps = false;
+window.addEventListener('keyup', event =>{
+   caps = event.getModifierState('CapsLock');
+   if (caps == true){
+    document.getElementsByClassName('capsMessage')[0].innerHTML = "WARNING! Capslock ON!";
+    }else{
+        document.getElementsByClassName('capsMessage')[0].innerHTML = "";
+    }
+})
+
