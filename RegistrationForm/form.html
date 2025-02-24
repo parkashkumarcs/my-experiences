@@ -10,17 +10,17 @@
     <div class="form-container">
         <form class="form" onsubmit="return register()">
             <h2>Register Form</h2>
-            <p class="label">Full Name:</p>
-            <input type="text"/>
-            <p class="label">Username:</p >
-            <input type="text"/>
+            <p class="label" >Full Name:</p>
+            <input type="text" class="input" id="field1" onkeyup="required1(this)"/>
+            <p class="label">Username:</p>
+            <input type="text" class="input" id="field2" onkeyup="required2()"/>
             <p class="label">Password:</p>
-            <input type="password" id="password1"/>
+            <input type="password" value="" class="input" id="password1"/>
             <p class="label">Confirm Password:</p class="label">
-            <input type="password" id="password2" onkeyup="matchPassword(this)"/>
+            <input type="password" value="" class="input" id="password2" onkeyup="matchPassword(this)"/>
             <p class="err" id="error">&nbsp;</p>
             <p class="toggmess" id="toggleMessage">Show Password</p>
-            <span><input type="checkbox" class="check" onclick="togglePassowd()"/></span><br><br>
+            <span><input type="checkbox" class="input check" onclick="togglePassowd()"/></span><br><br>
             <button type="submit" class="button"> Register</button>
         </form>
     </div>

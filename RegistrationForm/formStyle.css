@@ -21,7 +21,7 @@
 
 
 }
-.form input{
+.input{
     width: 260px;
     font-size: 20px;
     border-radius: 5px;
@@ -31,14 +31,26 @@
     transition: 0.2s;
     
 }
-.form input:focus{
+.input:focus{
     /* border-color: rgb(10, 218, 10); */
     border: 3px solid rgb(15, 199, 15);
+}
+.errorField{
+    /* border-color: rgb(10, 218, 10); */
+    width: 260px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 3px solid rgb(250, 0, 0);
+}
+.errorField:focus{
+    /* border-color: rgb(10, 218, 10); */
+    border: 3px solid rgb(199, 15, 15);
 }
 .check{
     position: relative;
     left: 0px;
-    top: -55px;
+    top: -45px;
     scale: 1.5;
 }
 .label{
