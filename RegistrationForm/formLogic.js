@@ -52,6 +52,7 @@ function matchPassword(currentValue){
 function register(){
     if(flag == 1){
         // alert(flag)
+        alert("Successfully Submited!")
         return true;
     }
     if(flag == 0){

@@ -23,8 +23,17 @@
 }
 .form input{
     width: 260px;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 5px;
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    transition: 0.2s;
+    
+}
+.form input:focus{
+    /* border-color: rgb(10, 218, 10); */
+    border: 3px solid rgb(15, 199, 15);
 }
 .check{
     position: relative;
