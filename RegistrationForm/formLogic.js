@@ -5,7 +5,6 @@ var fullName = '';
 var userName = '';
 var pass1 = '';
 var length4 = '';
-
 // alert(length3)
 // alert(length3.length)
 function togglePassowd(){
@@ -38,24 +37,30 @@ var flag =0;
 let pass2Data = getPassword2.value;
 length4 = pass2Data.length;
 // alert(length4)
+var notMatch = document.getElementById('error');
 function matchPassword(currentValue){
+
+    let isSpace = pattrn.test(currentValue.value);
     let string = currentValue.value;
     let string2 = getPassword1.value;
     length4 = string.length;
     if(string.length > 0 && string2.length > 0){
         if(getPassword1.value === string){
-            document.getElementById('error').innerHTML = 'passowrd matched';
-            document.getElementById('error').style.color = 'green';
+            notMatch.innerHTML = 'passowrd matched';
+            notMatch.style.color = 'green';
             flag = 1;
         }
+        else if(isSpace){
+            notMatch.innerText = 'Space is not allowed!';
+        }
         else{
-            document.getElementById('error').innerHTML = "passowrd doesn't match!";
-            document.getElementById('error').style.color = 'red';
+            notMatch.innerHTML = "passowrd doesn't match!";
+            notMatch.style.color = 'red';
             flag = 0;
         }
     }
     else{
-        document.getElementById('error').innerHTML = '&nbsp';
+        notMatch.innerHTML = '&nbsp';
         flag = 0;
     }
 }
@@ -119,26 +124,47 @@ function register(){
     }
 }
 
+
 function required1(vl){
     fullName = vl.value;
 }
-function required2(vl){
-    userName = vl.value;
+var pattrn = /\s/;
+var errorSpace1 = document.getElementsByClassName('spaceError1')[0];
+function required2(data){
+    let isSpace = pattrn.test(data.value);
+    // alert(isSpace)
+    if(isSpace){
+        errorSpace1.innerText = 'Space is not allowed!';
+    }
+    else{
+        errorSpace1.innerText = '';
+    }
+    userName = data.value;
 }
+var errorSpace2 = document.getElementsByClassName('spaceError2')[0];
 function required3(vl){
     pass1 = vl.value;
+    let isSpace = pattrn.test(vl.value);
+    // alert(isSpace)
+    if(isSpace){
+        errorSpace2.innerText = 'Space is not allowed!';
+    }
+    else{
+        errorSpace2.innerText = '';
+    }
 }
 /*
     The following code logic for Caps lock button. When a user click the caps lock button
     then in form page at right corner show the message to warn!
 */
 var caps = false;
+var warning = document.getElementsByClassName('capsMessage')[0];
 window.addEventListener('keyup', event =>{
    caps = event.getModifierState('CapsLock');
    if (caps == true){
-    document.getElementsByClassName('capsMessage')[0].innerHTML = "WARNING! Capslock ON!";
+    warning.innerHTML = "WARNING! Capslock ON!";
     }else{
-        document.getElementsByClassName('capsMessage')[0].innerHTML = "";
+        warning.innerHTML = "";
     }
 })
 

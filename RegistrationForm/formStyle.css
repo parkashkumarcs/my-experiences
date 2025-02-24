@@ -86,10 +86,30 @@
     left: 2px;
 }
 .capsMessage{
-    background-color: rgb(221, 233, 236);
     position: absolute;
     top: 50px;
     right: 40px;
-    font-size: 12px;
+    font-size: 13px;
+    color: red;
+}
+.spaceError1{
+    position: absolute;
+    top: 208px;
+    right: 40px;
+    font-size: 13px;
+    color: red;
+}
+.spaceError2{
+    position: absolute;
+    top: 295px;
+    right: 40px;
+    font-size: 13px;
+    color: red;
+}
+.spaceError3{
+    position: absolute;
+    top: 383px;
+    right: 40px;
+    font-size: 13px;
     color: red;
 }
