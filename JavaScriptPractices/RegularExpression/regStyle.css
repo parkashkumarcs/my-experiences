@@ -1,0 +1,23 @@
+.display-contianer{
+    width: 800px;
+    height: 500px;
+    border: 45px solid red;
+    outline: none;
+    background-color: black;
+    color: aliceblue;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    overflow: scroll;
+}
+legend{
+    font-size: 30px;
+    background-color: red;
+    /* border: 3px solid red; */
+    color: rgb(255, 255, 255);
+}
+.data{
+    color: aliceblue;
+    font-size: 30px;
+}
