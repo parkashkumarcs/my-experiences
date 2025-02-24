@@ -1,0 +1,66 @@
+.form-container{
+    width: 350px;
+    height: 510px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 0px 0px 5px 0px grey;
+    
+}
+.form{
+    padding: 40px;
+}
+.form h2{
+    color: rgb(29, 204, 67);
+    font-weight: bolder;
+    position: absolute;
+    top: 90px;
+    left: 710px;
+
+
+}
+.form input{
+    width: 260px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.check{
+    position: relative;
+    left: 0px;
+    top: -55px;
+    scale: 1.5;
+}
+.label{
+    color: rgba(56, 56, 56, 0.76);
+    position: relative;
+    bottom: -10px;
+}
+.toggmess{
+    color: rgba(56, 56, 56, 0.76);
+    position: relative;
+    bottom: 20px;
+}
+.button{
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: aliceblue;
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(10, 10, 202);
+    scale: 1.03;
+    border-bottom: 3px solid rgb(11, 217, 224);
+}
+.err{
+    color: rgba(56, 56, 56, 0.76);
+    position: relative;
+    max-height: fit-content;
+    bottom: 15px;
+    left: 2px;
+}

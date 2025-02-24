@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formStyle.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <form class="form" onsubmit="return register()">
+            <h2>Register</h2>
+            <p class="label">Full Name:</p>
+            <input type="text"/>
+            <p class="label">Username:</p >
+            <input type="text"/>
+            <p class="label">Password:</p>
+            <input type="password" id="password1"/>
+            <p class="label">Confirm Password:</p class="label">
+            <input type="password" id="password2" onkeyup="matchPassword(this)"/>
+            <p class="err" id="error">&nbsp;</p>
+            <p class="toggmess" id="toggleMessage">Show Password</p>
+            <span><input type="checkbox" class="check" onclick="togglePassowd()"/></span><br><br>
+            <button type="submit" class="button"> Register</button>
+        </form>
+    </div>
+    <script src="formLogic.js"></script>
+</body>
+</html>
