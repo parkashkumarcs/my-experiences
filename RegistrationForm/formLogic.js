@@ -3,9 +3,8 @@ var getPassword1 = document.getElementById('password1');
 var getPassword2 = document.getElementById('password2');
 var fullName = '';
 var userName = '';
-var length3 = '';
+var pass1 = '';
 var length4 = '';
-var passData = getPassword1.value;
 
 // alert(length3)
 // alert(length3.length)
@@ -13,8 +12,6 @@ function togglePassowd(){
     // alert('Working')
     let extractPaaword1 = getPassword1.getAttribute('type');
     let extractPaaword2 = getPassword2.getAttribute('type');
-    passData = getPassword1.value;
-    length3 = passData.length;
     // alert(extractPaaword1)
     // alert(extractPaaword2)
     // alert(getPassword1.value)
@@ -39,9 +36,8 @@ function togglePassowd(){
 }
 var flag =0;
 let pass2Data = getPassword2.value;
-length3 = passData.length;
 length4 = pass2Data.length;
-alert(length4)
+// alert(length4)
 function matchPassword(currentValue){
     let string = currentValue.value;
     let string2 = getPassword1.value;
@@ -66,8 +62,9 @@ function matchPassword(currentValue){
 function register(){
     let length1 = fullName.length;
     let length2 = userName.length;
-    alert(length3)
-    alert(length4)
+    let length3 = pass1.length;
+    // alert(length3)
+    // alert(length4)
     if(length1 > 0 && length2 > 0 && length3 > 0 && length4 > 0){
         if(flag == 1){
             // alert(flag)
@@ -127,4 +124,7 @@ function required1(vl){
 }
 function required2(vl){
     userName = vl.value;
+}
+function required3(vl){
+    pass1 = vl.value;
 }
