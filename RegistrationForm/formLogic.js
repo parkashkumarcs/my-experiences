@@ -5,6 +5,7 @@ var fullName = '';
 var userName = '';
 var pass1 = '';
 var length4 = '';
+var pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!#%*?&])[A-Za-z\d@$#!%*?&]{8,}$/;
 // alert(length3)
 // alert(length3.length)
 function togglePassowd(){
@@ -144,6 +145,13 @@ function required2(data){
 var errorSpace2 = document.getElementsByClassName('spaceError2')[0];
 function required3(vl){
     pass1 = vl.value;
+    // alert(pass1)
+    let isStrong = pattern.test(pass1);
+    // alert(isStrong)
+    if(isStrong){
+        // alert(isStrong);
+        
+    }
     let isSpace = pattrn.test(vl.value);
     // alert(isSpace)
     if(isSpace){
