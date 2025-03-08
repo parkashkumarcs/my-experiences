@@ -53,9 +53,12 @@ This repository contains multiple web development projects, including a fully fu
 
 ## 🔗 How to Use  
 
-### **1️⃣ Clone this repository:**  
+### Clone this repository:
 ```bash
 git clone https://github.com/yourusername/your-repository.git
+```
+<!-- This closes the bash code block -->
+
 
 
 ### **Key Features of This README:**
