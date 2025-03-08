@@ -1,6 +1,6 @@
 var times = 0;
 var parent_Div = document.getElementById('container');
-var child_Div = parent_Div.children;
+// var child_Div = parent_Div.children;
 
 while(times<=10){
     times++;

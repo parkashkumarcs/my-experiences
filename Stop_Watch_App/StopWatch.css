@@ -1,100 +1,143 @@
-.main-container{
-    align-content: center;
-    padding-left: 500px;
-    padding-top: 10px;
-}
-#card{
-    width: 300px;
-    height: 450px;
-    background-color: rgb(216, 216, 216);
-    /* padding-top: 150px; */
-    text-align: center;
+body {
+    background-color: #121212;
     color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#card {
+    width: 520px;
+    height: 450px;
+    background: linear-gradient(135deg, #1e1e1e, #292929);
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px 5px rgba(29, 29, 29, 0.527);
-}
-#card:hover{
-    box-shadow: 0px 0px 5px 5px rgba(26, 156, 196, 0.856);
-    background-color: rgb(27, 1, 29);
-    transition: 0.4s;
-}
-#setTime{
-    font-size: 30px;
-    width: 280px;
-    margin-top: 20px;
-    padding-top: 15px;
-    height: 50px;
-    background-color: rgb(155, 155, 155);
-    display: inline-block;
-    border-radius: 10px;
-    /* color: rgb(252, 249, 205); */
-}
-#stop{
-    font-size: 30px;
-    position: absolute;
-    left: 515px;
-    top: 465px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.15s;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
-    
-}
-.reset{
-    position: absolute;
-    font-size: 30px;
-    position: absolute;
-    left: 610px;
-    top: 465px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.15s;
-    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.733);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: 0.3s;
 }
 
-#start{
-    position: absolute;
-    font-size: 30px;
-    position: absolute;
-    left: 722px;
-    top: 465px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.15s;
-    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.733);
+#card:hover {
+    box-shadow: 0 0 15px #00c3ff;
 }
-#start:hover{
-    scale: 1.1;
-    background-color: rgb(34, 165, 8);
-    color: white;
+
+.title {
+    color: #00c3ff;
+    font-size: 36px;
+    margin-bottom: 55px;
 }
-.reset:hover{
-    scale: 1.1;
-    background-color: rgb(155, 155, 155);
-    color: white;
-}
-#stop:hover{
-    scale: 1.1;
-    background-color: rgb(236, 14, 14);
-    color: white;
-}
-.icon{
-    /* border: 3px solid yellow; */
+
+#setTime {
+    font-size: 28px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    font-size: 60px;
-    border-radius: 50%;
-    animation: myIcon 1s infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
+    width: 90%;
+    color: #00c3ff;
+    margin-bottom: 20px;
 }
-@keyframes myIcon {
-    from{
+.btn-group {
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    text-align: center;
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    font-weight: bold;
+    
+}
+#stop {
+    background-color: #ff3b3b;
+    color: white;
+}
+
+.reset {
+    background-color: #ffa500;
+    color: white;
+}
+
+#start {
+    background-color: #28a745;
+    color: white;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+#stop:hover {
+    background-color: #e60000;
+}
+
+.reset:hover {
+    background-color: #cc8500;
+}
+
+#start:hover {
+    background-color: #1e8c35;
+}
+@media (max-width: 600px) {
+    #card {
+        width: 90%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+    }
+}
+
+/* Icon Animation */
+.icon {
+    font-size: 50px;
+    animation: pulse 1s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+    from {
         transform: scale(1);
     }
-    to{
+    to {
         transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #setTime {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #setTime {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #setTime {
+        font-size: 1.2rem;
     }
 }
