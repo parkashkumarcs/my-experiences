@@ -1,0 +1,31 @@
+
+body{
+    margin: 0;
+    padding: 0;
+   
+
+.output__Console{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;;
+    border-radius: 10px;
+    margin: auto;
+    align-items: center;
+    margin-top: 70px;
+    position: relative;
+    border: 2rem solid rgb(75, 75, 75);
+}
+}
+.output__Console .output{
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.display{
+    font-size: 20px;
+}
